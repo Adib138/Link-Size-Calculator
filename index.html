@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link Size Calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+
+      <div class="title-box">
+        <h1 id="title">
+          محاسبه حجم لینک‌ها
+        </h1>
+
+        <p class="subtitle" id="subtitle">
+          هر لینک را در یک خط وارد کن
+        </p>
+      </div>
+
+      <div class="top-buttons">
+
+        <!-- Language -->
+        <button id="langToggle" class="lang-btn">
+          EN
+        </button>
+
+        <!-- Theme -->
+        <button id="themeToggle" class="theme-btn">
+          🌙
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Textarea -->
+    <textarea
+      id="linksInput"
+      placeholder="https://example.com/file.zip"
+    ></textarea>
+
+    <!-- Buttons -->
+    <div class="actions">
+
+      <button id="checkBtn">
+        محاسبه حجم
+      </button>
+
+      <button id="clearBtn" class="clear-btn">
+        پاک کردن
+      </button>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+
+      <div class="card">
+        <span id="linksLabel">تعداد لینک‌ها</span>
+        <h3 id="linksCount">0</h3>
+      </div>
+
+      <div class="card">
+        <span id="successLabel">موفق</span>
+        <h3 id="successCount">0</h3>
+      </div>
+
+      <div class="card">
+        <span id="errorLabel">خطادار</span>
+        <h3 id="errorCount">0</h3>
+      </div>
+
+    </div>
+
+    <!-- Result -->
+    <div class="result-box">
+
+      <p id="resultLabel">
+        مجموع حجم فایل‌ها
+      </p>
+
+      <h2 id="result">0 MB</h2>
+
+    </div>
+
+    <!-- Loader -->
+    <div id="loading" class="loading hidden"></div>
+
+    <!-- Progress -->
+    <div id="progressText" class="progress-text hidden">
+      در حال بررسی 0 از 0
+    </div>
+
+    <!-- Errors -->
+    <div id="errorContainer" class="error-container hidden">
+
+      <h3 id="errorTitle">
+        لینک‌های خطادار
+      </h3>
+
+      <ul id="errorList"></ul>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
