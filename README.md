@@ -120,7 +120,6 @@ https://adib138.github.io/Link-Size-Calculator/
 
 * Drag & Drop support
 * Dark mode
-* Multiple URL support
 * Download speed estimation
 * Progress animations
 * API version
@@ -244,7 +243,6 @@ https://example.com/file.zip
 ## 🚀 توسعه‌های آینده
 
 * حالت تاریک
-* پشتیبانی از چند لینک
 * انیمیشن
 * نسخه API
 * تخمین سرعت دانلود
